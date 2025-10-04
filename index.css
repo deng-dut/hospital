@@ -1,0 +1,243 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f7f9fb;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.book-btn{
+    background: #5783e1;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    }
+.book-btn:hover{
+    color: #ffffff;}
+
+.book-btn::after{
+    content: ' ➔';
+    font-size: 15px;
+    margin-left: 10px;
+    transition: 0.3s;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+.book-btn:hover::after{
+    margin-left: 15px;
+}
+.logo {
+  width: 120px;
+  height: 100;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: #004aad;
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #004aad;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #0084ff;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 74, 173, 0.7), rgba(0, 74, 173, 0.7)),
+    url("https://images.unsplash.com/photo-1583912268180-6ec9d6c8fc21?auto=format&fit=crop&w=1920&q=80")
+      center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: #ffffff;
+  color: #004aad;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #004aad;
+  color: #fff;
+}
+
+/* About */
+.about {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ffffff;
+}
+
+.about h2 {
+  color: #004aad;
+  margin-bottom: 15px;
+}
+
+/* Departments */
+.departments {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.dept-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.dept-card {
+  background: #ffffff;
+  padding: 30px 50px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  color: #004aad;
+  transition: 0.3s;
+}
+
+.dept-card:hover {
+  transform: translateY(-5px);
+  background: #004aad;
+  color: #fff;
+}
+
+/* Login Section */
+.login-section {
+  background: #f0f4ff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.login-section h2 {
+  color: #004aad;
+  margin-bottom: 20px;
+}
+
+.login-container {
+  background: #fff;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #004aad;
+}
+
+.login-container input,
+.login-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+}
+
+.login-container input:focus,
+.login-container select:focus {
+  border-color: #004aad;
+  box-shadow: 0 0 4px rgba(0, 74, 173, 0.3);
+}
+
+.login-container .btn {
+  width: 100%;
+  background: #004aad;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.login-container .btn:hover {
+  background: #0084ff;
+}
+
+.note {
+  margin-top: 15px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ffffff;
+}
+
+.contact h2 {
+  color: #004aad;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #004aad;
+  color: #ffffff;
+  font-size: 0.9rem;
+}

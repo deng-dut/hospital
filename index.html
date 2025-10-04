@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>St. Lawrence Hospital</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo-container">
+        <img src="logo.jpg" alt="St. Lawrence Hospital Logo" class="logo" />
+        <h1>St. Lawrence Hospital</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Departments</a></li>
+          <li><a href="#">Doctors</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#" class="book-btn">Book Now</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Your Health, Our Mission</h2>
+        <p>Compassionate care, advanced medicine, trusted professionals.</p>
+        <a href="#login" class="btn">Book Appointment</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+      <h2>About Us</h2>
+      <p>
+        St. Lawrence Hospital is committed to providing exceptional healthcare
+        services with compassion, professionalism, and dedication. Our goal is
+        to make every patient’s experience positive and healing.
+      </p>
+    </section>
+
+    <!-- Departments -->
+    <section class="departments">
+      <h2>Our Departments</h2>
+      <div class="dept-container">
+        <div class="dept-card">Emergency</div>
+        <div class="dept-card">Pediatrics</div>
+        <div class="dept-card">Surgery</div>
+        <div class="dept-card">Pharmacy</div>
+      </div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login" class="login-section">
+      <h2>Make an Appointment</h2>
+      <div class="login-container">
+        <form>
+             <label for="email">Name:</label>
+          <input type="text" id="first-name" placeholder="Full Name" required />
+          <label for="phone-number">Phone Number:</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="+211 --- --- ---"
+            required
+          />
+           <label for="department">Department:</label>
+          <select id="department" required>
+            <option value="">Cardiology</option>
+            <option value="neurology">Neurology</option>
+            <option value="ediatric">Pediatric</option>
+            <option type="radio" value="#">Obsterics and Gynecology</option>
+          </select>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+      <p class="note">Please fill the above details to make an Appointment.</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>Email: info@stlawrencehospital.com | Phone: +211 920 321 899</p>
+      <p>Address: SevenDay RoundAbout, Juba, South Sudan.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 St. Lawrence Hospital. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
