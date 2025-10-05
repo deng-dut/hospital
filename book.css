@@ -1,18 +1,79 @@
-/* Reset */
+/* Reset default margins */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* General */
 body {
-  font-family: "Poppins", Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background: #f7f9fb;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #dff2ff, #a3d0ff);
+  color: #0a1a4a;
 }
 
+/* Section layout */
+.health-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px;
+  gap: 40px;
+}
+
+/* Left image container */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Right text container */
+.text-container {
+  flex: 1;
+  color: #001e82;
+}
+
+.text-container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.text-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #0c2461;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .health-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .text-container p {
+    font-size: 1rem;
+  }
+
+  .image-container img {
+    max-width: 100%;
+  }
+}
 /* Header */
 header {
   display: flex;
@@ -112,150 +173,6 @@ nav ul li a:hover {
   background: #004aad;
   color: #fff;
 }
-
-/* About */
-.about {
-  text-align: left;
-  padding: 60px 20px;
-  background: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 35px;
-  background-color: #d9e4f0;
-
-  
-}
-
-.about h2 {
-  color: #004aad;
-  margin-bottom: 15px;
-  line-height: 2.0;
-  margin: 0 0 20px 0;
-}
-.about-img {
-  width: 500px;
-  height: auto;
-  margin-top: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
-}
-.about-text {
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-/* Departments */
-.departments {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.dept-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.dept-card {
-  background: #ffffff;
-  padding: 30px 50px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  font-weight: 500;
-  color: #004aad;
-  transition: 0.3s;
-}
-
-.dept-card:hover {
-  transform: translateY(-5px);
-  background: #004aad;
-  color: #fff;
-}
-
-/* Login Section */
-.login-section {
-  background: #f0f4ff;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.login-section h2 {
-  color: #004aad;
-  margin-bottom: 20px;
-}
-
-.login-container {
-  background: #fff;
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.login-container label {
-  display: block;
-  text-align: left;
-  margin-bottom: 8px;
-  font-weight: 600;
-  color: #004aad;
-}
-
-.login-container input,
-.login-container select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background: #fff;
-  font-size: 1rem;
-  color: #333;
-  outline: none;
-}
-
-.login-container input:focus,
-.login-container select:focus {
-  border-color: #004aad;
-  box-shadow: 0 0 4px rgba(0, 74, 173, 0.3);
-}
-
-.login-container .btn {
-  width: 100%;
-  background: #004aad;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-.login-container .btn:hover {
-  background: #0084ff;
-}
-
-.note {
-  margin-top: 15px;
-  color: #555;
-  font-size: 0.9rem;
-}
-
-/* Contact */
-.contact {
-  text-align: center;
-  padding: 60px 20px;
-  background: #ffffff;
-}
-
-.contact h2 {
-  color: #004aad;
-  margin-bottom: 15px;
-}
-
 /* Footer */
 footer {
   text-align: left;
@@ -374,4 +291,67 @@ footer {
   background-color: #0000a0;
   border-radius: 2px;
 }
+.login-section {
+  background: #f0f4ff;
+  padding: 80px 20px;
+  text-align: center;
+}
 
+.login-section h2 {
+  color: #004aad;
+  margin-bottom: 20px;
+}
+
+.login-container {
+  background: #fff;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #004aad;
+}
+
+.login-container input,
+.login-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+}
+
+.login-container input:focus,
+.login-container select:focus {
+  border-color: #004aad;
+  box-shadow: 0 0 4px rgba(0, 74, 173, 0.3);
+}
+
+.login-container .btn {
+  width: 100%;
+  background: #004aad;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.login-container .btn:hover {
+  background: #0084ff;
+}
+
+.note {
+  margin-top: 15px;
+  color: #555;
+  font-size: 0.9rem;
+}
