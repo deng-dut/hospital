@@ -1,0 +1,146 @@
+<style>
+    /* Footer Styling */
+.footer {
+  background: #e6f3ff; /* Light blue */
+  color: #333;
+  padding: 50px 20px 20px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.footer-about p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-newsletter h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  border-left: 3px solid #004aad; /* keep dark blue accent */
+  padding-left: 8px;
+  color: #004aad;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #004aad;
+  transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #ff6600; /* orange highlight */
+}
+
+.footer-contact p {
+  margin: 8px 0;
+  color: #333;
+}
+
+.footer-newsletter input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.footer-newsletter button {
+  padding: 10px 15px;
+  border: none;
+  background: #004aad;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.footer-newsletter button:hover {
+  background: #003080;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  background: #004aad; /* keep original dark blue */
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+</style>
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Logo & About -->
+    <div class="footer-about">
+      <img src="logo.jpg" alt="St. Lawrence Hospital Logo" class="footer-logo" />
+      <p>
+        St. Lawrence Hospital is dedicated to providing quality healthcare
+        services with compassion and professionalism.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#departments">Departments</a></li>
+        <li><a href="#doctors">Doctors</a></li>
+        <li><a href="#appointment">Book Appointment</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>📍 123 Health Avenue, Nairobi, Kenya</p>
+      <p>📞 +254 700 123 456</p>
+      <p>✉️ info@stlawrencehospital.com</p>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-newsletter">
+      <h3>Newsletter</h3>
+      <p>Subscribe to get health tips and hospital updates.</p>
+      <form>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          required
+        />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 St. Lawrence Hospital. All Rights Reserved.</p>
+  </div>
+</footer>
